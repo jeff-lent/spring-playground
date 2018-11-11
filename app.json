@@ -1,0 +1,28 @@
+{
+  "name": "spring-playground",
+  "description": "Spring Playground",
+  "scripts": {
+  },
+  "env": {
+    "ENERGY": {
+      "required": true
+    },
+    "PAPERTRAIL_API_TOKEN": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "papertrail",
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/gradle"
+    }
+  ]
+}
